@@ -1,0 +1,15 @@
+main {
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 0.3rem;
+    font-weight: normal;
+    padding-bottom: 0.3rem;
+}
+
+.column {
+    padding-bottom: 0.28rem;
+}
