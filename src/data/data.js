@@ -4,7 +4,7 @@ export default {
         name: '杜航',
         experience: 4,
         education: '大专',
-        age: 25,
+        birthday: '1993-11-30',
         sex: 1,
         homepages: [
             {

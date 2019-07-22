@@ -1,6 +1,18 @@
 import React from 'react'
 import './BasicInfo.css'
 
+// 年龄计算
+function getAge(dateString) {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
 class BasicInfo extends React.Component {
     render() {
         return (
@@ -9,7 +21,7 @@ class BasicInfo extends React.Component {
                 <ul className="row label_list">
                     <li>{this.props.data.experience}年经验</li>
                     <li>{this.props.data.education}</li>
-                    <li>{this.props.data.age}岁</li>
+                    <li>{getAge(this.props.data.birthday)}岁</li>
                     <li>{['女', '男'][this.props.data.sex]}</li>
                 </ul>
                 <ul className="label_list">
