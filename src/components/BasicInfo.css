@@ -1,35 +1,35 @@
-.name {
+.basic_info .name {
     font-size: 0.25rem;
     margin-bottom: 0.08rem;
 }
 
-.label_list {
+.basic_info .label_list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.label_list li {
+.basic_info .label_list li {
     padding-top: 0.12rem;
 }
 
-.label_list li, .label_list li a {
+.basic_info .label_list li, .label_list li a {
     font-size: 0.12rem;
     display: flex;
     align-items: center;
 }
 
-.label_list li .iconfont {
+.basic_info .label_list li .iconfont {
     padding-right: 0.05rem;
     font-size: 0.15rem;
 }
 
-.label_list li:after {
+.basic_info .label_list li:after {
     content: '|';
     margin: 0 0.12rem;
     color: #b9b9b9;
 }
 
-.label_list li:last-child:after {
+.basic_info .label_list li:last-child:after {
     content: '';
     margin: 0;
 }

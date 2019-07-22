@@ -4,7 +4,7 @@ import './BasicInfo.css'
 class BasicInfo extends React.Component {
     render() {
         return (
-            <div>
+            <div className="basic_info">
                 <p className="name">{this.props.data.name}</p>
                 <ul className="row label_list">
                     <li>{this.props.data.experience}年经验</li>
@@ -16,7 +16,7 @@ class BasicInfo extends React.Component {
                     {
                         this.props.data.homepages.map((item, index) =>
                             <li key={index}>
-                                <a href={item}>
+                                <a href={item.url} target="_blank" rel="noopener noreferrer">
                                     <i className={'iconfont ' + item.iconfont}/>
                                     <span>{item.url}</span>
                                 </a>

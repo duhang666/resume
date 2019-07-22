@@ -8,14 +8,12 @@ h1 {
     padding-bottom: 0.3rem;
 }
 
-.column {
-    padding-bottom: 0.28rem;
+section {
+    padding-bottom: 0.3rem;
 }
 
-.skill_list li {
-    line-height: 0.25rem;
-    font-size: 0.12rem;
-    color: #8d92a1;
+section:last-of-type {
+    padding-bottom: 0;
 }
 
 @media (min-width: 800px) {

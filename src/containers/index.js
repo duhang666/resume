@@ -1,7 +1,8 @@
 import React from 'react'
 import data from '../data/data'
-import Plate from '../components/Plate'
 import BasicInfo from '../components/BasicInfo'
+import Skill from '../components/Skill'
+import Work from '../components/Work'
 import './index.css'
 
 class Index extends React.Component {
@@ -9,20 +10,18 @@ class Index extends React.Component {
         return (
             <main>
                 <h1>{data.job}</h1>
-                <div className="column">
+                <section>
                     <BasicInfo data={data.basic_info}/>
-                </div>
-                <div className="column">
-                    <Plate title="技能优势">
-                        <ul className="skill_list">
-                            {
-                                data.kill.map((item, index) =>
-                                    <li key={index}>● {item}{index !== data.kill.length - 1 ? '；' : '。'}</li>
-                                )
-                            }
-                        </ul>
-                    </Plate>
-                </div>
+                </section>
+                <section>
+                    <Skill data={data.kills}/>
+                </section>
+                <section>
+                    <Work title="工作经历" data={data.works}/>
+                </section>
+                <section>
+                    <Work title="项目经历" data={data.productions}/>
+                </section>
             </main>
         );
     }

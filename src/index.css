@@ -14,6 +14,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 0.14rem;
     color: #202329;
 }
 
@@ -33,5 +34,5 @@ a {
 }
 
 a:hover {
-    color: #00d7c6;
+    color: #00d7c6 !important;
 }

@@ -1,0 +1,10 @@
+.skill_list li {
+    padding-top: 0.05rem;
+    line-height: 0.2rem;
+    font-size: 0.12rem;
+    color: #8d92a1;
+}
+
+.skill_list li:first-child {
+    padding-top: 0;
+}
