@@ -29,15 +29,9 @@ ul {
 a {
     color: initial;
     text-decoration: none;
-    transition: 0.2s;
+    transition: color 0.2s;
 }
 
 a:hover {
     color: #00d7c6;
-}
-
-@media (max-width: 480px) {
-    html {
-        font-size: 200px;
-    }
 }

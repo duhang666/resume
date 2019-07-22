@@ -1,15 +1,27 @@
 main {
-    width: 800px;
-    margin: 0 auto;
-    padding: 30px;
+    padding: 0.15rem;
 }
 
 h1 {
-    font-size: 0.3rem;
+    font-size: 0.28rem;
     font-weight: normal;
     padding-bottom: 0.3rem;
 }
 
 .column {
     padding-bottom: 0.28rem;
+}
+
+.skill_list li {
+    line-height: 0.25rem;
+    font-size: 0.12rem;
+    color: #8d92a1;
+}
+
+@media (min-width: 800px) {
+    main {
+        width: 800px;
+        margin: 0 auto;
+        padding: 0.3rem;
+    }
 }
