@@ -1,5 +1,5 @@
 export default {
-    job: 'web前端',
+    job: '前端开发',
     basic_info: {
         name: '杜航',
         experience: 4,
