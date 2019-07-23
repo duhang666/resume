@@ -9,7 +9,7 @@ class Skill extends React.Component {
                 <ul className="skill_list">
                     {
                         this.props.data.map((item, index) =>
-                            <li key={index}>● {item}{index !== this.props.data.length - 1 ? '；' : '。'}</li>
+                            <li key={index}>{item}{index !== this.props.data.length - 1 ? '；' : '。'}</li>
                         )
                     }
                 </ul>

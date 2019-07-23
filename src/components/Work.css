@@ -13,19 +13,23 @@
 }
 
 .work_item .header .name {
+    font-weight: bold;
     line-height: 0.21rem;
     font-size: 0.15rem;
+    color: #414a60;
 }
 
 .work_item .header .date {
-    font-size: 0.12rem;
+    font-size: 0.13rem;
     color: #8d92a1;
 }
 
 .work_item .job {
     margin-top: 0.1rem;
+    font-weight: bold;
     line-height: 0.20rem;
-    font-size: 0.13rem;
+    font-size: 0.14rem;
+    color: #414a60;
 }
 
 .work_item .columns {
@@ -33,27 +37,38 @@
 }
 
 .work_item .columns .column_title, .work_item .column_list li {
-    font-size: 0.12rem;
+    font-size: 0.13rem;
     color: #8d92a1;
 }
 
 .work_item .column_list li {
+    display: flex;
+    align-items: baseline;
     padding-top: 0.05rem;
     line-height: 0.2rem;
-    font-size: 0.12rem;
-    color: #8d92a1;
+}
+
+.work_item .column_list li:before {
+    content: '';
+    flex-shrink: 0;
+    width: 0.06rem;
+    height: 0.06rem;
+    margin-right: 0.05rem;
+    border-radius: 50%;
+    background-color: #8d92a1;
+    transform: translateY(-0.02rem);
 }
 
 .work_item .link {
-    padding-top: 0.05rem;
+    margin-top: 0.1rem;
     line-height: 0.2rem;
-    font-size: 0.12rem;
+    font-size: 0.13rem;
     color: #8d92a1;
 }
 
 .work_item .link .iconfont {
     padding-right: 0.05rem;
-    font-size: 0.12rem;
+    font-size: 0.15rem;
 }
 
 .work_item .link a {

@@ -1,10 +1,22 @@
 .skill_list li {
+    display: flex;
+    align-items: baseline;
     padding-top: 0.05rem;
     line-height: 0.2rem;
-    font-size: 0.12rem;
+    font-size: 0.13rem;
     color: #8d92a1;
 }
 
 .skill_list li:first-child {
     padding-top: 0;
+}
+
+.skill_list li:before {
+    content: '';
+    width: 0.06rem;
+    height: 0.06rem;
+    margin-right: 0.05rem;
+    border-radius: 50%;
+    background-color: #8d92a1;
+    transform: translateY(-0.02rem);
 }

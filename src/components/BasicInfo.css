@@ -1,11 +1,13 @@
 .basic_info .name {
-    font-size: 0.25rem;
     margin-bottom: 0.08rem;
+    font-weight: bold;
+    font-size: 0.25rem;
 }
 
 .basic_info .label_list {
     display: flex;
     flex-wrap: wrap;
+    color: #414a60;
 }
 
 .basic_info .label_list li {
@@ -13,7 +15,7 @@
 }
 
 .basic_info .label_list li, .label_list li a {
-    font-size: 0.12rem;
+    font-size: 0.13rem;
     display: flex;
     align-items: center;
 }

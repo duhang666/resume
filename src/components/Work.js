@@ -20,17 +20,17 @@ class Work extends React.Component {
                                     <ul className="column_list">
                                         {
                                             work_item.descriptions.map((description_item, description_index) =>
-                                                <li key={description_index}>● {description_item}{description_index !== work_item.descriptions.length - 1 ? '；' : '。'}</li>
+                                                <li key={description_index}>{description_item}{description_index !== work_item.descriptions.length - 1 ? '；' : '。'}</li>
                                             )
                                         }
                                     </ul>
                                 </div>
                                 <div className="columns">
-                                    <div className="column_title">描述：</div>
+                                    <div className="column_title">业绩：</div>
                                     <ul className="column_list">
                                         {
                                             work_item.performance.map((performance_item, performance_index) =>
-                                                <li key={performance_index}>● {performance_item}{performance_index !== work_item.performance.length - 1 ? '；' : '。'}</li>
+                                                <li key={performance_index}>{performance_item}{performance_index !== work_item.performance.length - 1 ? '；' : '。'}</li>
                                             )
                                         }
                                     </ul>
