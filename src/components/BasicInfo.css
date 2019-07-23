@@ -7,7 +7,6 @@
 .basic_info .label_list {
     display: flex;
     flex-wrap: wrap;
-    color: #414a60;
 }
 
 .basic_info .label_list li {
@@ -15,9 +14,10 @@
 }
 
 .basic_info .label_list li, .label_list li a {
-    font-size: 0.13rem;
     display: flex;
     align-items: center;
+    font-size: 0.13rem;
+    color: #414a60;
 }
 
 .basic_info .label_list li .iconfont {
