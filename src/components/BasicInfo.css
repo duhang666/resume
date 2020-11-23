@@ -1,7 +1,7 @@
 .basic_info .name {
     margin-bottom: 0.08rem;
     font-weight: bold;
-    font-size: 0.25rem;
+    font-size: 0.23rem;
 }
 
 .basic_info .label_list {
@@ -35,4 +35,3 @@
     content: '';
     margin: 0;
 }
-

@@ -3,18 +3,25 @@ import Plate from "./Plate";
 import './Work.css'
 
 class Work extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isShowMore: false
+        };
+    }
+
     render() {
         return (
             <Plate title={this.props.title}>
-                <ul className="work_list">
+                <ul className={`work_list ${this.state.isShowMore ? 'show_more' : ''}`}>
                     {
-                        this.props.data.map((work_item, work_index) =>
-                            <li className="work_item" key={work_index}>
+                        this.props.data.map((work_item, work_index) => {
+                            return <li className="work_item" key={work_index}>
                                 <div className="header">
-                                    <p className="name">{work_item.name}</p>
+                                    <p className="name">{work_item.name}（{work_item.job}）</p>
                                     <p className="date">{work_item.date}</p>
                                 </div>
-                                <p className="job">{work_item.job}</p>
+                                {/*<p className="job">{work_item.job}</p>*/}
                                 <div className="columns">
                                     <div className="column_title">描述：</div>
                                     <ul className="column_list">
@@ -44,10 +51,14 @@ class Work extends React.Component {
                                         <a href={work_item.url} target="_blank" rel="noopener noreferrer">{work_item.url}</a>
                                     </p> : ''
                                 }
-                            </li>
-                        )
+                            </li>;
+                        })
                     }
                 </ul>
+                <div className='more_btn' onClick={() => this.setState({isShowMore: !this.state.isShowMore})}>
+                    <span className={`iconfont ${this.state.isShowMore ? 'icon-shouqi1' : 'icon-gengduo1'}`}/>
+                    <span>{this.state.isShowMore ? '收起' : '查看更多'}</span>
+                </div>
             </Plate>
         );
     }

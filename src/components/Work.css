@@ -1,3 +1,11 @@
+.work_list .work_item:nth-child(n + 4) {
+    display: none;
+}
+
+.work_list.show_more .work_item:nth-child(n + 4) {
+    display: block;
+}
+
 .work_item {
     padding-top: 0.2rem;
 }
@@ -48,6 +56,7 @@
     line-height: 0.2rem;
 }
 
+
 .work_item .column_list li:before {
     content: '';
     flex-shrink: 0;
@@ -73,4 +82,16 @@
 
 .work_item .link a {
     color: #8d92a1;
+}
+
+.more_btn {
+    padding-top: 0.18rem;
+    font-weight: bold;
+    color: #00c2b3;
+    cursor: pointer;
+    user-select: none;
+}
+
+.more_btn .iconfont {
+    padding-right: 0.06rem;
 }

@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    padding: 0.3rem 0.15rem;
+    padding: 0.25rem 0.15rem;
     background-color: #ffffff;
 }
 
@@ -13,13 +13,13 @@ h1 {
 }
 
 section {
-    margin-top: 0.32rem;
+    margin-top: 0.3rem;
 }
 
 @media (min-width: 800px) {
     main {
         width: 800px;
         margin: 0 auto;
-        padding: 0.4rem;
+        padding: 0.35rem 0.4rem;
     }
 }

@@ -1,9 +1,9 @@
 .plate header {
     display: flex;
     align-items: center;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.18rem;
     font-weight: bold;
-    line-height: 0.17rem;
+    line-height: 1;
     font-size: 0.17rem;
 }
 
